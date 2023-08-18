@@ -16,7 +16,43 @@ let blogList = [{
         "● 🔎 学术和技术资料\n" +
         "这些资源原本散落在互联网的不同角落，我花时间搜集和整理，舍弃劣质内容，保留精华。\n" +
         "就像海滩上的贝壳，我希望把它们收集起来，免得这些宝贝被大海冲走。我会不断更新和完善这个合集，欢迎你经常来逛逛，挖掘有用的资源宝石。"
-}];
+}, {
+    type: {
+        name: "知识库",
+        code: 1,
+    },
+    pic: "代码人的疑难杂症.png",
+    title: "代码人的疑难杂症",
+    href: "https://www.yuque.com/xlu103/ynzz",
+    detail: " 👋  欢迎来到【疑难杂症】知识库，冲冲冲！！！！\n" +
+        "记录在软件开发过程中遇到疑难杂症，包括环境安装等等等等..."
+},
+
+    {
+        type: {
+            name: "知识库",
+            code: 1,
+        },
+        pic: "前端之实践出真知.png",
+        title: "前 端 之 实 践 出 真 知",
+        href: "https://www.yuque.com/xlu103/web",
+        detail: "搞前端的"
+    },
+
+    {
+        type: {
+            name: "知识库",
+            code: 1,
+        },
+        pic: "代码人的疑难杂症.png",
+        title: "代码人的疑难杂症",
+        href: "https://www.yuque.com/xlu103/ynzz",
+        detail: " 👋  欢迎来到【疑难杂症】知识库，冲冲冲！！！！\n" +
+            "记录在软件开发过程中遇到疑难杂症，包括环境安装等等等等..."
+    },
+
+
+];
 
 // 获取存放博客卡片的容器
 let blogCardGroup = document.querySelector(".blog-card-group");

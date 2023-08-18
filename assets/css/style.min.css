@@ -430,7 +430,10 @@ header .btn-group {
 }
 
 .load-more:hover {
-    background: var(--accent)
+    background: var(--accent);
+    /*鼠标变手*/
+    cursor: pointer;
+
 }
 
 .aside {
@@ -872,8 +875,20 @@ footer .wrapper {
         color: #5865f2
     }
 
+    .social-link .wechat {
+        color: #15d36a
+    }
+
     .social-link .twitter {
         color: #1ca0f1
+    }
+
+    .social-link .github {
+        color: #373737
+    }
+
+    .social-link .yuque {
+        color: #15d36a
     }
 
     .social-link .facebook {
