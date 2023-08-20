@@ -4,7 +4,9 @@ let blogList = [{
         name: "知识库",
         code: 1,
     },
-    pic: "互联网资源合集.png",
+
+
+    pic: "https://cdn.nlark.com/yuque/0/2023/png/34813220/1692370272009-f059eea1-2122-4014-8e8c-20487f5bcb8f.png",
     title: "互联网资源合集",
     href: "https://www.yuque.com/xlu103/re",
     detail: "这里汇聚了互联网上许多高质量的内容和工具，包括:\n" +
@@ -21,7 +23,7 @@ let blogList = [{
         name: "知识库",
         code: 1,
     },
-    pic: "代码人的疑难杂症.png",
+    pic: "https://cdn.nlark.com/yuque/0/2023/png/34813220/1692370271604-7e365726-cd30-4a24-8ed0-dcaa4db66c35.png?x-oss-process=image%2Fresize%2Cw_1336%2Climit_0",
     title: "代码人的疑难杂症",
     href: "https://www.yuque.com/xlu103/ynzz",
     detail: " 👋  欢迎来到【疑难杂症】知识库，冲冲冲！！！！\n" +
@@ -33,25 +35,11 @@ let blogList = [{
             name: "知识库",
             code: 1,
         },
-        pic: "前端之实践出真知.png",
+        pic: "https://cdn.nlark.com/yuque/0/2023/png/34813220/1692370269572-35f7f317-a261-428a-b2eb-bd933336fd39.png",
         title: "前 端 之 实 践 出 真 知",
         href: "https://www.yuque.com/xlu103/web",
         detail: "搞前端的"
-    },
-
-    {
-        type: {
-            name: "知识库",
-            code: 1,
-        },
-        pic: "代码人的疑难杂症.png",
-        title: "代码人的疑难杂症",
-        href: "https://www.yuque.com/xlu103/ynzz",
-        detail: " 👋  欢迎来到【疑难杂症】知识库，冲冲冲！！！！\n" +
-            "记录在软件开发过程中遇到疑难杂症，包括环境安装等等等等..."
-    },
-
-
+    }
 ];
 
 // 获取存放博客卡片的容器
@@ -65,7 +53,8 @@ for (let blog of blogList) {
     let banner = document.createElement("div");
     banner.className = "blog-card-banner";
     let bannerImg = document.createElement("img");
-    bannerImg.src = picPrefix + blog.pic;
+    bannerImg.src = blog.pic;
+
     bannerImg.alt = blog.title;
     bannerImg.width = "250";
     bannerImg.className = "blog-banner-img";
