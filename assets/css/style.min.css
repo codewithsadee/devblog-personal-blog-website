@@ -6,7 +6,7 @@
     --foreground-primary: hsl(218, 23%, 23%);
     --foreground-secondary: hsl(216, 15%, 52%);
     --foreground-tertiary: hsl(214, 20%, 69%);
-    --accent: hsl(229, 76%, 66%)
+    --accent: linear-gradient(25deg, #c81df1, #ba88d0, #98c7ac, #33ff81)
 }
 
 .dark-theme {
@@ -17,7 +17,7 @@
     --foreground-primary: hsl(210, 38%, 95%);
     --foreground-secondary: hsl(211, 25%, 84%);
     --foreground-tertiary: hsl(214, 20%, 69%);
-    --accent: hsl(229, 76%, 66%)
+    --accent: linear-gradient(25deg, #c81df1, #ba88d0, #98c7ac, #33ff81)
 }
 
 :root {
@@ -741,11 +741,11 @@ footer .wrapper {
     }
 
     .hero-img {
-        width: 94%;
-        height: 100%;
+        /*width: 94%;*/
+        height: 85vh;
         object-fit: contain;
-        border-radius: 0 0 15vw 15vw;
-        transform: translate(48px, -9px);
+        /*border-radius: 0 0 15vw 15vw;*/
+        /*transform: translate(48px, -9px);*/
     }
 
     .hero .shape {
@@ -757,16 +757,17 @@ footer .wrapper {
     }
 
     .hero .shape-1 {
+        box-shadow: 0 0 10px 10px rgb(170 159 159 / 50%); /* 阴影效果，白色、模糊度和偏移根据你的需要进行调整 */
         background: var(--accent);
         width: 90%;
-        height: 90%;
+        height: 85%;
         z-index: -1
     }
 
     .hero .shape-2 {
         width: 90%;
         height: 90%;
-        box-shadow: inset 0 -30px 0 var(--action-primary);
+        box-shadow: inset 0 -2vw 0 var(--action-primary);
         z-index: 2
     }
 

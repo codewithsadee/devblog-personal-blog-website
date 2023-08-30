@@ -38,7 +38,7 @@
     --foreground-secondary: hsl(211, 25%, 84%);
     --foreground-tertiary: hsl(214, 20%, 69%);
 
-    --accent: hsl(229, 76%, 66%);
+    --accent: linear-gradient(25deg, #c81df1, #ba88d0, #98c7ac, #33ff81)
 
 }
 
