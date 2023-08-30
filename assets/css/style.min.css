@@ -13,7 +13,7 @@
     --background-primary: hsl(218, 23%, 23%);
     --background-secondary: hsl(220, 26%, 14%);
     --action-primary: hsl(216, 15%, 52%);
-    --action-secondary: hsl(218, 23%, 23%);
+    --action-secondary: hsl(0deg 0% 99% / 12%);
     --foreground-primary: hsl(210, 38%, 95%);
     --foreground-secondary: hsl(211, 25%, 84%);
     --foreground-tertiary: hsl(214, 20%, 69%);
@@ -320,9 +320,26 @@ header .btn-group {
     display: none
 }
 
+
 .main {
+    opacity: 0;
+    visibility: hidden;
+    min-height: 100vh;
     background: var(--background-secondary);
-    padding: var(--py) 0
+
+    padding: var(--py) 0;
+
+    /*在现实这个页面的时候会去掉以下样式*/
+    margin-top: 5vw;
+    margin-left: 5vw;
+
+}
+
+.main.show {
+    opacity: 1;
+    visibility: visible;
+    transition: 2s;
+
 }
 
 .blog .h2 {
@@ -618,7 +635,7 @@ footer .wrapper {
     }
 
     .container {
-        max-width: 1150px
+        max-width: 1500px
     }
 
     header .btn-group {
@@ -690,7 +707,7 @@ footer .wrapper {
 
     .hero .container {
         display: grid;
-        grid-template-columns:1fr 1fr;
+        grid-template-columns:1fr 1.5fr;
         align-items: center;
         gap: 50px
     }
@@ -719,16 +736,17 @@ footer .wrapper {
     }
 
     .hero .img-box {
+        transition: 100ms;
         position: relative;
         z-index: 2
     }
 
     .hero-img {
-        width: 80%;
+        width: 94%;
         height: 100%;
         object-fit: contain;
-        border-radius: 0 0 280px 230px;
-        transform: translate(40px, 8px)
+        border-radius: 0 0 15vw 15vw;
+        transform: translate(48px, -9px);
     }
 
     .hero .shape {
@@ -747,8 +765,8 @@ footer .wrapper {
     }
 
     .hero .shape-2 {
-        width: 92%;
-        height: 92%;
+        width: 90%;
+        height: 90%;
         box-shadow: inset 0 -30px 0 var(--action-primary);
         z-index: 2
     }

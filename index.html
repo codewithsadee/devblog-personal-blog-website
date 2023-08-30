@@ -8,8 +8,6 @@
 	<meta name="viewport"
 	      content="width=device-width, initial-scale=1.0">
 	<title>Xlu Stout 的个人博客</title>
-
-
 	<link rel="shortcut icon"
 	      href="./assets/images/头像_mini.ico"
 	      type="image/x-icon">
@@ -26,17 +24,15 @@
 	      crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap"
 	      rel="stylesheet">
-	<meta name="referrer" content="no-referrer" />
+	<meta name="referrer"
+	      content="no-referrer"/>
 </head>
 
 <body class="light-theme">
 
-<header>
-
+<header style="height: 10vh">
 	<div class="container">
-
 		<nav class="navbar">
-
 			<a href="#">
 				<img src="./assets/images/logo-light.svg"
 				     alt="Xlu Stout Logo"
@@ -49,7 +45,6 @@
 				     height="40"
 				     class="logo-dark">
 			</a>
-
 			<div class="btn-group">
 				<button class="theme-btn theme-btn-mobile light">
 					<ion-icon name="moon"
@@ -114,24 +109,16 @@
 			</div>
 
 		</nav>
-
 	</div>
-
 </header>
 
-
-<!--
-- #HERO SECTION
--->
-
-<div class="hero">
-
+<div class="hero  "  id="hero"
+     style="height: 90vh">
 	<div class="container">
-
 		<div class="left">
 
 			<h1 class="h1">
-				Hi, I'm <b>Xlu&nbsp;Stout</b>.
+				<b id="my-name">Hi, I'm Xlu&nbsp;Stout</b>.
 				<br>28线 程序员
 			</h1>
 
@@ -152,7 +139,7 @@
 
 		<div class="right">
 			<div class="pattern-bg"></div>
-			<div class="img-box">
+			<div class="img-box" id="img-box">
 
 				<img src="./assets/images/avatar.png"
 				     alt="Julia Walker"
@@ -168,35 +155,36 @@
 </div>
 
 
-<main class="main">
+<main class="main"
+      id="main">
 
 	<div class="container">
 		<div class="blog">
 			<h2 class="h2">最新博客文章</h2>
 			<div class="blog-card-group">
 				<!--<div class="blog-card">
-					<div class="blog-card-banner">
-						<img src="./assets/images/blog-1.png"
-							 alt="Building microservices with Dropwizard, MongoDB & Docker"
-							 width="250"
-							 class="blog-banner-img">
-					</div>
+				<div class="blog-card-banner">
+					<img src="./assets/images/blog-1.png"
+						 alt="Building microservices with Dropwizard, MongoDB & Docker"
+						 width="250"
+						 class="blog-banner-img">
+				</div>
 
-					<div class="blog-content-wrapper">
-						<button class="blog-topic text-tiny">Database</button>
-						<h3>
-							<a href="#"
-							   class="h3">
-								Building microservices with Dropwizard, MongoDB & Docker
-							</a>
-						</h3>
-						<p class="blog-text">
-							This NoSQL database oriented to documents (by documents like JSON) combines some of the features
-							from relational databases, easy to use and the multi-platform is the best option for scale up and
-							have fault tolerance, load balancing, map reduce, etc.
-						</p>
-					</div>
-				</div>-->
+				<div class="blog-content-wrapper">
+					<button class="blog-topic text-tiny">Database</button>
+					<h3>
+						<a href="#"
+						   class="h3">
+							Building microservices with Dropwizard, MongoDB & Docker
+						</a>
+					</h3>
+					<p class="blog-text">
+						This NoSQL database oriented to documents (by documents like JSON) combines some of the features
+						from relational databases, easy to use and the multi-platform is the best option for scale up and
+						have fault tolerance, load balancing, map reduce, etc.
+					</p>
+				</div>
+			</div>-->
 			</div>
 
 			<a class="btn load-more"
@@ -233,7 +221,7 @@
 				</div>
 
 				<div class="tags">
-					<h2 class="h2">🤔会点啥？</h2>
+					<h2 class="h2">🤔会点啥?</h2>
 					<div class="wrapper">
 						<button class="hashtag">#C</button>
 						<button class="hashtag">#Java</button>
@@ -262,12 +250,11 @@
 				</div>
 
 				<div class="contact">
-					<h2 class="h2">😍开始 一场有趣交流？</h2>
+					<h2 class="h2">😍开始 一场有趣交流?</h2>
 					<div class="wrapper">
 						<p>
-							想了解更多关于我如何帮助您克服问题的信息吗？
-							<br>
-							我们可以进行一次交流。
+							想了解更多关于我如何帮助您解决问题的信息吗?
+							<br> 我们可以进行一次交流.
 						</p>
 						<ul class="social-link">
 							<li id="icon-wechat">
@@ -303,7 +290,8 @@
 </main>
 
 
-<footer>
+
+<footer id="footer">
 
 	<div class="container">
 
@@ -356,25 +344,25 @@
 		</div>
 
 		<!--	<div class="wrapper">
-				<p class="footer-title">Legal Stuff</p>
-				<ul>
-					<li>
-						<a href="#"
-						   class="footer-link">Privacy Notice</a>
-					</li>
+			<p class="footer-title">Legal Stuff</p>
+			<ul>
+				<li>
+					<a href="#"
+					   class="footer-link">Privacy Notice</a>
+				</li>
 
-					<li>
-						<a href="#"
-						   class="footer-link">Cookie Policy</a>
-					</li>
+				<li>
+					<a href="#"
+					   class="footer-link">Cookie Policy</a>
+				</li>
 
-					<li>
-						<a href="#"
-						   class="footer-link">Terms Of Use</a>
-					</li>
-				</ul>
-			</div>
-	-->
+				<li>
+					<a href="#"
+					   class="footer-link">Terms Of Use</a>
+				</li>
+			</ul>
+		</div>
+-->
 	</div>
 
 	<p class="copyright">
@@ -383,6 +371,8 @@
 </footer>
 
 <script src="./assets/js/script.min.js"></script>
+<script src="./assets/js/scroll.js"></script>
+
 <script type="module"
         src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule
