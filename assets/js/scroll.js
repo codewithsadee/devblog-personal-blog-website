@@ -1,23 +1,31 @@
-// 监听页面滚动事件
-window.addEventListener('scroll', () => {
+function loadBlogCard() {
     const hero = document.getElementById('hero');
-    const main = document.getElementById('main');
+    const blogCardGroup = document.getElementById('blog-card-group');
 
     if (hero.getBoundingClientRect().top < window.innerHeight) {
         // 模拟加载新内容的延迟
         setTimeout(() => {
-            main.classList.add('show');
-            main.style.marginTop = "0";
-            main.style.marginLeft = "0";
+            blogCardGroup.classList.add('show');
+            blogCardGroup.style.marginTop = "0";
+            blogCardGroup.style.marginLeft = "0";
         }, 10);
     } else {
         setTimeout(() => {
-            main.classList.remove('show');
-            main.style.marginTop = "5vw";
-            main.style.marginLeft = "5vw";
+            blogCardGroup.classList.remove('show');
+            blogCardGroup.style.marginTop = "5vw";
+            blogCardGroup.style.marginLeft = "5vw";
         }, 10);
     }
+}
+
+// 监听页面滚动事件
+window.addEventListener('scroll', () => {
+    loadBlogCard();
 });
+window.addEventListener('load', () => {
+    loadBlogCard();
+});
+
 
 const hero = document.getElementById('img-box');
 

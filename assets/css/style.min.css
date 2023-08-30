@@ -322,25 +322,13 @@ header .btn-group {
 
 
 .main {
-    opacity: 0;
-    visibility: hidden;
+
     min-height: 100vh;
     background: var(--background-secondary);
-
     padding: var(--py) 0;
 
-    /*在现实这个页面的时候会去掉以下样式*/
-    margin-top: 5vw;
-    margin-left: 5vw;
-
 }
 
-.main.show {
-    opacity: 1;
-    visibility: visible;
-    transition: 2s;
-
-}
 
 .blog .h2 {
     line-height: 1.3;
@@ -350,6 +338,17 @@ header .btn-group {
 
 .blog-card-group {
     margin-bottom: 3rem
+    /*在现实这个页面的时候会去掉以下样式*/
+    margin-top: 5vw;
+    margin-left: 5vw;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.blog-card-group.show {
+    opacity: 1;
+    visibility: visible;
+    transition: 2s;
 }
 
 .blog-card {
